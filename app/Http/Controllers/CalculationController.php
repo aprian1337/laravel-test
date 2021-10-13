@@ -18,10 +18,10 @@ class CalculationController extends Controller
         return $a+$b;
     }
 
-    // public function division(Request $request){
-    //     $a = $request->a;
-    //     $b = $request->b;
-    //     return $a/$b;
-    // }
+    public function division(Request $request){
+        $a = $request->a;
+        $b = $request->b;
+        return $a/$b;
+    }
 
 }
