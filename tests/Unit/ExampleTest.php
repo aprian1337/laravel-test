@@ -13,7 +13,9 @@ class ExampleTest extends TestCase
      */
     public function test_example()
     {
-        // $total = new 
-        $this->assertTrue(true);
+        $a = 10;
+        $b = 5;
+        $true = $a<$b;
+        $this->assertFalse($true);
     }
 }
