@@ -12,7 +12,7 @@ class CalculationController extends Controller
     public function sum(Request $request){
         $a = $request->a;
         $b = $request->b;
-        if(!is_numeric($a) || !is_numeric($a)){
+        if(!is_numeric($a) || !is_numeric($b)){
             throw new Exception('Must be number.');
         }
         return $a+$b;

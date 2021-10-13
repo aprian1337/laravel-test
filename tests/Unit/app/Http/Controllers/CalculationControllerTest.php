@@ -40,7 +40,7 @@ class CalculationControllerTest extends TestCase
         return $this->assertNotEquals($a-$b, $res);
     }
 
-    public function test_sum_chara()
+    public function test_sum_input_with_chara()
     {
         $a = "asda";
         $b = "dsadaz";

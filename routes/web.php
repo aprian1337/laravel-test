@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CalculationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return response("Welcome", 200);
 });
+
+Route::get('/sum', [CalculationController::class, 'sum']);
+// Route::get('/division', [CalculationController::class, 'division']);
